@@ -6,7 +6,7 @@ const Downloads = () => {
   const tps = [
     {
       name: "TP 1 - 3D Gaza Street Scene",
-      tp: "/download/projetdour.blend",
+      tp: "/portfolio/public/download/projetdour.blend",
       rapport: "rapport-tp1.pdf",
       screenshot: "/download/screentp1.png",
       video: "tp1-video.mp4"
