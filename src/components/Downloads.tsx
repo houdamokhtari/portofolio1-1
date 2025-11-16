@@ -7,38 +7,17 @@ const Downloads = () => {
     {
       name: "TP 1 - 3D Gaza Street Scene",
       tp: "/download/projetdour.blend",
-      rapport: "/download/rapport-tp1.pdf",
+      rapport: "/download/rapport.pdf",
       screenshot: "/download/screentp1.png",
-      video: "/download/tp1-video.mp4"
-    },
-    {
-      name: "TP 2 - JavaScript Fundamentals",
-      tp: "/download/tp2.pdf",
-      rapport: "/download/rapport-tp2.pdf",
-      screenshot: "/download/tp2-screenshot.jpg",
-      video: "/download/tp2-video.mp4"
-    },
-    {
-      name: "TP 3 - React Components",
-      tp: "/download/tp3.pdf",
-      rapport: "/download/rapport-tp3.pdf",
-      screenshot: "/download/tp3-screenshot.jpg",
-      video: "/download/tp3-video.mp4"
-    },
-    {
-      name: "TP 4 - Node.js Backend",
-      tp: "/download/tp4.pdf",
-      rapport: "/download/rapport-tp4.pdf",
-      screenshot: "/download/tp4-screenshot.jpg",
-      video: "/download/tp4-video.mp4"
-    },
+      video: "/download/vedio.mp4"
+    }
   ];
 
   const finalProject = {
     name: "Final Project",
-    rapport: "/download/final-project-rapport.pdf",
-    screenshot: "/download/final-project-screenshot.jpg",
-    video: "/download/final-project-video.mp4"
+    rapport: "/download/rapport.pdf",
+    screenshot: "/download/screentp1.png",
+    video: "/download/vedio.mp4"
   };
 
   return (
@@ -69,14 +48,14 @@ const Downloads = () => {
                   <CardHeader>
                     <CardTitle className="text-base flex items-center gap-2">
                       <FileText className="h-4 w-4 text-secondary" />
-                      TP Document
+                      Blender Project
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <Button variant="w3d" size="sm" className="w-full" asChild>
                       <a href={tp.tp} download>
                         <Download className="mr-2 h-4 w-4" />
-                        Download TP
+                        Download .blend
                       </a>
                     </Button>
                   </CardContent>
@@ -94,7 +73,7 @@ const Downloads = () => {
                     <Button variant="w3d" size="sm" className="w-full" asChild>
                       <a href={tp.rapport} download>
                         <Download className="mr-2 h-4 w-4" />
-                        Download Rapport
+                        Download PDF
                       </a>
                     </Button>
                   </CardContent>
@@ -115,7 +94,7 @@ const Downloads = () => {
                     <Button variant="w3d" size="sm" className="w-full" asChild>
                       <a href={tp.screenshot} download>
                         <Download className="mr-2 h-4 w-4" />
-                        Download
+                        Download PNG
                       </a>
                     </Button>
                   </CardContent>
@@ -136,7 +115,7 @@ const Downloads = () => {
                     <Button variant="w3d" size="sm" className="w-full" asChild>
                       <a href={tp.video} download>
                         <Download className="mr-2 h-4 w-4" />
-                        Download
+                        Download MP4
                       </a>
                     </Button>
                   </CardContent>
@@ -164,7 +143,7 @@ const Downloads = () => {
                   <Button variant="w3d" size="sm" className="w-full" asChild>
                     <a href={finalProject.rapport} download>
                       <Download className="mr-2 h-4 w-4" />
-                      Download Rapport
+                      Download PDF
                     </a>
                   </Button>
                 </CardContent>
@@ -185,7 +164,7 @@ const Downloads = () => {
                   <Button variant="w3d" size="sm" className="w-full" asChild>
                     <a href={finalProject.screenshot} download>
                       <Download className="mr-2 h-4 w-4" />
-                      Download
+                      Download PNG
                     </a>
                   </Button>
                 </CardContent>
@@ -206,7 +185,7 @@ const Downloads = () => {
                   <Button variant="w3d" size="sm" className="w-full" asChild>
                     <a href={finalProject.video} download>
                       <Download className="mr-2 h-4 w-4" />
-                      Download
+                      Download MP4
                     </a>
                   </Button>
                 </CardContent>
