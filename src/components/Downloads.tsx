@@ -73,8 +73,8 @@ const Downloads = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <Button variant="w3d" size="sm" className="w-full" asChild>
-                      <a href={`/${tp.tp}`} download>
+                  <Button variant="w3d" size="sm" className="w-full" asChild>
+                      <a href={tp.tp} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download TP
                       </a>
@@ -91,8 +91,8 @@ const Downloads = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <Button variant="w3d" size="sm" className="w-full" asChild>
-                      <a href={`/${tp.rapport}`} download>
+                  <Button variant="w3d" size="sm" className="w-full" asChild>
+                      <a href={tp.rapport} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download Rapport
                       </a>
@@ -113,7 +113,7 @@ const Downloads = () => {
                       <Image className="h-8 w-8 text-muted-foreground" />
                     </div>
                     <Button variant="w3d" size="sm" className="w-full" asChild>
-                      <a href={`/${tp.screenshot}`} download>
+                      <a href={tp.screenshot} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download
                       </a>
@@ -134,7 +134,7 @@ const Downloads = () => {
                       <Video className="h-8 w-8 text-muted-foreground" />
                     </div>
                     <Button variant="w3d" size="sm" className="w-full" asChild>
-                      <a href={`/${tp.video}`} download>
+                      <a href={tp.video} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download
                       </a>
@@ -161,12 +161,12 @@ const Downloads = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="w3d" size="sm" className="w-full" asChild>
-                    <a href={`/${finalProject.rapport}`} download>
-                      <Download className="mr-2 h-4 w-4" />
-                      Download Rapport
-                    </a>
-                  </Button>
+                <Button variant="w3d" size="sm" className="w-full" asChild>
+                  <a href={finalProject.rapport} download>
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Rapport
+                  </a>
+                </Button>
                 </CardContent>
               </Card>
 
@@ -183,7 +183,7 @@ const Downloads = () => {
                     <Image className="h-8 w-8 text-muted-foreground" />
                   </div>
                   <Button variant="w3d" size="sm" className="w-full" asChild>
-                    <a href={`/${finalProject.screenshot}`} download>
+                    <a href={finalProject.screenshot} download>
                       <Download className="mr-2 h-4 w-4" />
                       Download
                     </a>
@@ -204,7 +204,7 @@ const Downloads = () => {
                     <Video className="h-8 w-8 text-muted-foreground" />
                   </div>
                   <Button variant="w3d" size="sm" className="w-full" asChild>
-                    <a href={`/${finalProject.video}`} download>
+                    <a href={finalProject.video} download>
                       <Download className="mr-2 h-4 w-4" />
                       Download
                     </a>
