@@ -6,39 +6,39 @@ const Downloads = () => {
   const tps = [
     {
       name: "TP 1 - 3D Gaza Street Scene",
-      tp: "/downloads/projetdour.blend",
-      rapport: "rapport-tp1.pdf",
-      screenshot: "/downloads/screentp1.png",
-      video: "tp1-video.mp4"
+      tp: "/download/projetdour.blend",
+      rapport: "/download/rapport-tp1.pdf",
+      screenshot: "/download/screentp1.png",
+      video: "/download/tp1-video.mp4"
     },
     {
       name: "TP 2 - JavaScript Fundamentals",
-      tp: "tp2.pdf",
-      rapport: "rapport-tp2.pdf",
-      screenshot: "tp2-screenshot.jpg",
-      video: "tp2-video.mp4"
+      tp: "/download/tp2.pdf",
+      rapport: "/download/rapport-tp2.pdf",
+      screenshot: "/download/tp2-screenshot.jpg",
+      video: "/download/tp2-video.mp4"
     },
     {
       name: "TP 3 - React Components",
-      tp: "tp3.pdf",
-      rapport: "rapport-tp3.pdf",
-      screenshot: "tp3-screenshot.jpg",
-      video: "tp3-video.mp4"
+      tp: "/download/tp3.pdf",
+      rapport: "/download/rapport-tp3.pdf",
+      screenshot: "/download/tp3-screenshot.jpg",
+      video: "/download/tp3-video.mp4"
     },
     {
       name: "TP 4 - Node.js Backend",
-      tp: "tp4.pdf",
-      rapport: "rapport-tp4.pdf",
-      screenshot: "tp4-screenshot.jpg",
-      video: "tp4-video.mp4"
+      tp: "/download/tp4.pdf",
+      rapport: "/download/rapport-tp4.pdf",
+      screenshot: "/download/tp4-screenshot.jpg",
+      video: "/download/tp4-video.mp4"
     },
   ];
 
   const finalProject = {
     name: "Final Project",
-    rapport: "final-project-rapport.pdf",
-    screenshot: "final-project-screenshot.jpg",
-    video: "final-project-video.mp4"
+    rapport: "/download/final-project-rapport.pdf",
+    screenshot: "/download/final-project-screenshot.jpg",
+    video: "/download/final-project-video.mp4"
   };
 
   return (
@@ -74,7 +74,7 @@ const Downloads = () => {
                   </CardHeader>
                   <CardContent>
                     <Button variant="w3d" size="sm" className="w-full" asChild>
-                      <a href={`/${tp.tp}`} download>
+                      <a href={tp.tp} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download TP
                       </a>
@@ -92,7 +92,7 @@ const Downloads = () => {
                   </CardHeader>
                   <CardContent>
                     <Button variant="w3d" size="sm" className="w-full" asChild>
-                      <a href={`/${tp.rapport}`} download>
+                      <a href={tp.rapport} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download Rapport
                       </a>
@@ -113,7 +113,7 @@ const Downloads = () => {
                       <Image className="h-8 w-8 text-muted-foreground" />
                     </div>
                     <Button variant="w3d" size="sm" className="w-full" asChild>
-                      <a href={`/${tp.screenshot}`} download>
+                      <a href={tp.screenshot} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download
                       </a>
@@ -134,7 +134,7 @@ const Downloads = () => {
                       <Video className="h-8 w-8 text-muted-foreground" />
                     </div>
                     <Button variant="w3d" size="sm" className="w-full" asChild>
-                      <a href={`/${tp.video}`} download>
+                      <a href={tp.video} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download
                       </a>
@@ -162,7 +162,7 @@ const Downloads = () => {
                 </CardHeader>
                 <CardContent>
                   <Button variant="w3d" size="sm" className="w-full" asChild>
-                    <a href={`/${finalProject.rapport}`} download>
+                    <a href={finalProject.rapport} download>
                       <Download className="mr-2 h-4 w-4" />
                       Download Rapport
                     </a>
@@ -183,7 +183,7 @@ const Downloads = () => {
                     <Image className="h-8 w-8 text-muted-foreground" />
                   </div>
                   <Button variant="w3d" size="sm" className="w-full" asChild>
-                    <a href={`/${finalProject.screenshot}`} download>
+                    <a href={finalProject.screenshot} download>
                       <Download className="mr-2 h-4 w-4" />
                       Download
                     </a>
@@ -204,7 +204,7 @@ const Downloads = () => {
                     <Video className="h-8 w-8 text-muted-foreground" />
                   </div>
                   <Button variant="w3d" size="sm" className="w-full" asChild>
-                    <a href={`/${finalProject.video}`} download>
+                    <a href={finalProject.video} download>
                       <Download className="mr-2 h-4 w-4" />
                       Download
                     </a>
